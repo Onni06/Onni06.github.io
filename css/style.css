@@ -1,0 +1,27 @@
+body {
+  background-color: lightblue;
+  
+}
+
+div{
+border: 5px solid blue;
+text-align: center;
+}
+h1 {
+  color: blue;
+  background-color:Red;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+style="list-style-type:square;
+style-align: center;
+}
+
+.mylist {
+border: 5px solid red;
+border-radius:1000px;
+}
