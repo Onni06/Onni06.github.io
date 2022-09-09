@@ -1,3 +1,6 @@
+
+
+
 body {
   background-color: lightblue;
   
@@ -11,17 +14,17 @@ h1 {
   color: blue;
   background-color:Red;
 }
-
 p {
   font-size: 20px;
 }
 
-ul {
-style="list-style-type:square;
-style-align: center;
 }
-
 .mylist {
 border: 5px solid red;
 border-radius:1000px;
+style-align: center;
 }
+.b {
+style=list-style-type:square;
+}
+
