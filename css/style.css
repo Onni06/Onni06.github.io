@@ -18,13 +18,23 @@ p {
   font-size: 20px;
 }
 
-}
+
 .mylist {
 border: 5px solid red;
 border-radius:1000px;
-style-align: center;
+
 }
 .b {
 style=list-style-type:square;
 }
+
+table, th, td {
+  border:3px solid green;
+}
+table {
+width:50%;
+}
+
+
+
 
