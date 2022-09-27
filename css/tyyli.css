@@ -1,10 +1,38 @@
-Main {
-Text-align:center;
-
+body {
+background-color:red;
+margin-right:
 }
 
+img {
+border-radius:125px;
+ width: 300px;
+  height: 250px;
+  border: 10px solid blue;
+  background: #eee;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+div.container{
+
+}
 
 
 .myDiv{
-font-family:Sans-serif
+font-family:Sans-serif;
+text-align:center;
 }
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+.round-image {
