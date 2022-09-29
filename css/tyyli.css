@@ -1,6 +1,5 @@
 body {
 background-color:red;
-margin-right:
 }
 
 img {
@@ -12,21 +11,6 @@ border-radius:125px;
   margin: auto;
   padding: 15px 10px;
 }
-
-
-
-
-
-
-
-
-
-
-div.container{
-
-}
-
-
 .myDiv{
 font-family:Sans-serif;
 text-align:center;
@@ -35,4 +19,4 @@ ul.myUL {
   display: inline-block;
   text-align: left;
 }
-.round-image {
+
