@@ -1,6 +1,6 @@
 body {
 background-color: red;
-
+font-size:20px
 }
 
 img {
@@ -13,6 +13,7 @@ border-radius:125px;
   padding: 15px 10px;
 }
 .mydiv{
+
 font-family:Sans-serif;
 text-align:center;
 }
