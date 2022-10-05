@@ -1,6 +1,7 @@
 body {
 background-color: red;
-font-size:20px
+font-size:20px;
+color: blue;
 }
 
 img {
@@ -10,7 +11,7 @@ border-radius:125px;
   border: 7px solid blue;
   background: #eee;
   margin: auto;
-  padding: 15px 10px;
+  padding: 10px 5px;
 }
 .mydiv{
 
@@ -22,3 +23,8 @@ ul.myUL {
   text-align: left;
 }
 
+
+#myimg1 {
+
+
+}
