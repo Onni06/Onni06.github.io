@@ -4,10 +4,12 @@ background-color:white;
 }
 .mydiv {
 	background-color:#deb887;
- border: 1px solid black;
-  margin-top: 100px;
+ border: 7px solid gray;
+  margin-top: 50px;
   margin-bottom: 0px;
   margin-right: 350px;
   margin-left: 350px;
-
+box-shadow: 10px 10px 10px 10px lightgrey;
 }
+
+
