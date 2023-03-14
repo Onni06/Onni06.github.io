@@ -1,0 +1,29 @@
+
+.text{
+font-size:25px;
+margin:0 150px 0 0;
+
+}
+
+.float-left{
+float:left;
+margin:5px 5px 5px 0;
+object-position: left top;
+object-fit: fill;
+}
+
+.float-right{
+float:right;
+margin:5px 0 5px 5px;
+ 
+}
+.pullquote {
+width:300px;
+font-size: 1.25em;
+float:right;
+border-left: 15px #770000 solid;
+padding: 0.5em 1em;
+color:#AAAAAA;
+margin: 1em;
+background-color: #330000;
+}
