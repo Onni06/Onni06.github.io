@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Mini project 4 Tip Calculator</h1>
+        
+            <label for="amount">Amount</label>
+            <input type="text" name="amount" id="amount" placeholder="$" class="field__input">
+            </input>
+        </div>
+        
+            <label for="tip">Tip</label>
+            <select name="tip" id="tip" class="field__input">
+                <option value="0" selected>No tip </option>
+                <option value="10">10% </option>
+                <option value="15">15% </option>
+                <option value="20">20% </option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="people" class="field__label">People</label>
+            <input type="number" value="1" min="1" step="1" id="people" class="field__input">
+        </div>
+        <button id="laske">Calculate</button>
+        <div class="info">
+            <p class="info__tip"></p>
+            <p class="info__total"></p>
+        </div>
+    </div>
+    
+    <script>
+window.addEventListener("DOMContentLoaded", () => {
+	document.getElementById("laske").addEventListener("click", () => {
+		const amount = parseFloat(document.getElementById("amount").value);
+        
+        if (isNaN(amount)) return;
+
+		const tipEl = document.getElementById("tip");
+		const tip = Number.parseInt(tipEl.options[tipEl.selectedIndex].value).toFixed(
+			2
+		);
+		const henkilöt = Number.parseInt(document.getElementById("people").value);
+
+		const tipInDollars = amount * (tip / 100);
+		const subTotal = parseFloat(amount + tipInDollars);
+		const total = subTotal / henkilöt;
+
+		document.querySelector(".info__tip").innerHTML = `Tip: $${parseFloat(
+			tipInDollars
+		).toFixed(2)}`;
+		document.querySelector(".info__total").innerHTML = ` Total: $${total} ${
+			henkilöt > 1 ? "each" : ""
+		}`;
+		document.querySelector(".info").style = "display: block";
+	});
+});
+    </script>
+</body>
+</html>
