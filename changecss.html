@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Changing css with event listeners</h1>
+    <div>
+        <label>Background color</label>
+        <input type="text" class="js-bg-color" style ="padding: 30px; font-size: 30px;">
+    </div>
+    <div>
+        <label>Text color</label>
+        <input type="text" class="js-text-color" style ="padding: 30px; font-size: 30px;">
+    </div>
+    <script>
+// Tallennettiin muuttujaan querySelectorilla Background-color input 
+var bgColor = document.querySelector(".js-bg-color")
+// Tallennettiin muuttujaan querySelectorilla textColor input
+var textColor = document.querySelector(".js-text-color")
+//Tallennettiin muuttuujaan koko body elementti
+var body = document.querySelector("body")
+// Lisättiin  bgColoriin event listener "keyup"
+bgColor.addEventListener('keyup', function(event) {
+    //tallenettiin event.target.value muuttuujaan, jotta ei tarvitse kirjoittaa sitö monta kertaa
+    var color = event.target.value
+    //Käytettiin switch komentoa, jotta vain tietyt värit toimivat
+    switch(color) {
+        case 'red':
+        case 'blue':
+        case 'green':
+    body.style.backgroundColor = color
+    break
+    // laitettiin oranssi default background-coloriksi
+    default:
+        body.style.backgroundColor = "orange"
+    }
+    });
+    //Lisättiin textColoriin eventListener "keyup"
+    textColor.addEventListener('keyup', function(event) {
+       //laitetaan tekstin väriksi se mitä kirjoitetaan inputtiin
+        body.style.color = event.target.value
+    });
+
+    </script>
+</body>
+</html>
