@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+       .div2 {
+           width: 100px;
+           height: 200px;
+           background-image: linear-gradient(#9c0015, #6f34b3);
+           transition: width 5s;
+       }
+   </style>
+    <h1>Moi</h1>
+    <div>
+    <label>
+        Vaihtaa tekstin väriä
+    </label>
+        <input type="text" class="js-text-color">
+</div>
+<div class="div2"></div>
+<script>
+    
+    var testivari = document.querySelector(".js-text-color")
+    var body = document.querySelector("body")
+    var divi = document.querySelector(".div2")
+
+
+    testivari.addEventListener('keyup', function(event) {
+        body.style.color = event.target.value
+    });
+
+divi.addEventListener('click', function(event) {
+    divi.style.width = "100%";
+});
+</script>
+</body>
+</html>
