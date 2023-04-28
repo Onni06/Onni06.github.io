@@ -10,18 +10,21 @@
  
    
    <script>
-var kysymys = Number(prompt("give me a number"))
-var vastaus = Math.random() * 10;
+var kysymys = Number(prompt("give me a number 1-10"))
+var vastaus = Math.floor((Math.random() * 10) + 1)
 while (true) {
-    var kysymys = Number(prompt("give me a number"))
-    if(kysymys && kysymys == vastaus) {
+    var kysymys = Number(prompt("give me a number 1-10"))
+    if(kysymys == vastaus) {
        alert("you win")
-    break;
-   }
+       break;
+       var elem = document.querySelector('.body')
+       elem.style.backgroundColor = green
 
+      }
+  
 }
    
-   
+document.querySelector('body').style.backgroundColor = green
    </script> 
 </body>
 </html>
