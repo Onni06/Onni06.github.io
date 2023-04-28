@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 class="testi"></h1>
+<script>
+class henkilo {
+    constructor(name, age){
+        this.name = name 
+        this.age = Number(age) 
+    }
+    makeSound(henkilo) {
+         henkilo.innerText = this.name + " is " + this.age + " years old "
+    
+    }
+}
+const ihminen = new henkilo
+  (prompt("what's your name"),
+ Number(prompt("how old are you")))
+
+ihminen.makeSound(document.querySelector("h1"))
+</script>
+</body>
+</html>
