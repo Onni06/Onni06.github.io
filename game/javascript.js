@@ -6,10 +6,15 @@ let y = 100;
 let radius = 70;
 let speed = 30;
 
+
 let upPressed = false;
 let downPressed = false;
 let leftPressed = false;
 let rightPressed = false;
+
+
+
+
 
 //Game loop
 function drawGame(){
@@ -18,6 +23,7 @@ clearScreen();
 inputs();
 boundryCheck();
 drawGreenBlob();
+drawSmallBlob();
 }
 
 function boundryCheck(){
@@ -57,6 +63,7 @@ if(rightPressed) {
 }
 
 
+
 function drawGreenBlob(){
 ctx.fillStyle = "red";
 if(upPressed){
@@ -71,14 +78,10 @@ if(leftPressed){
 if(rightPressed){
     ctx.fillStyle = "pink"
 } 
-
-
-
 ctx.beginPath();
 ctx.arc(x,y, radius, 0, Math.PI * 2);
 ctx.fill();
 }
-
 
 function clearScreen(){
     ctx.fillStyle = "blue";
@@ -124,6 +127,7 @@ if (event.keyCode == 39) {
 rightPressed = false;
 }
 }
+
 
 
 
