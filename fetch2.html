@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //AJAX = Asynchronous JavaScript and XML
+        
+        fetch('https://swapi.dev/api/people/1/')
+    .then(function(response) {
+        return response.json()
+    })
+    .then(function(res){
+        luke = res
+     
+       // const [movie1, movie2, movie3, ...movies] = luke.films
+        // console.log(movie3)
+        luke.films.forEach(function(url, index) {
+            console.log(url, index)
+        })
+            
+    })
+    
+    </script>
+</body>
+</html>
