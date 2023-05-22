@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+ 
+  <div>
+    <label for="value1">Etunimi</label>
+    <input type="text" id="value1">
+  </div>
+  
+  <div>
+    <label for="value2">Sukunimi</label>
+    <input type="text" id="value2">
+  </div>
+  
+  <div>
+    <label for="value3">ikä</label>
+    <input type="text" id="value3">
+  </div>
+  
+  <button onclick="tulostaArvot()">Tulosta arvot</button>
+  
+  <div id="tuloste"></div>
+  
+  <script>
+    function tulostaArvot() {
+      
+      var arvo1 = document.getElementById('value1').value;
+      var arvo2 = document.getElementById('value2').value;
+      var arvo3 = document.getElementById('value3').value;
+      
+      
+      var tuloste = `
+         Olet ${arvo1}
+         ${arvo2}
+         ja olet ${arvo3} vuotta vanha`;
+      
+      document.getElementById('tuloste').innerHTML = tuloste;
+    }
+  </script>
+</body>
+</html>
