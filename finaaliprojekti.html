@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+h1 {
+    text-align: center;
+}
+.letter.active {
+transform: scale(1,5);
+}
+
+
+</style>
+</head>
+<body>
+    <h1><span class="js-letter"Final Project></h1>
+    <script>
+const h1 = document.querySelector("h1")
+const letters = h1.innerText.split('')
+let html = ""
+
+console.log(title)
+letters.forEach(letter=> {
+    let classes = ''
+    if(letter !== ' ') {
+        classes = 'letter js-letter'
+    }
+
+    htnl = html + '<span class='${classes}'>${letter} js-letter'>
+})
+h1.innerHTML = html
+const jsLetters = document.querySelector(".js-letter")
+jsLetters.forEach(node =>) {
+    node.addEventlistener()
+}
+    </script>
+</body>
+</html>
