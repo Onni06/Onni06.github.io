@@ -6,37 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-h1 {
+body {
     text-align: center;
 }
+.letter {
+    font-size: 120px;
+font-family:fantasy, cursive;
+display: inline-block;
+color:#0b7eb3;
+transition: all 250ms ease-in-out;
+}
+
 .letter.active {
-transform: scale(1,5);
+transform: scale(1,3) rotate(40deg);
+color: rgb(15, 180, 209);
 }
 
 
 </style>
 </head>
 <body>
-    <h1><span class="js-letter"Final Project></h1>
+    
+    <h1>final projekti</h1>
     <script>
 const h1 = document.querySelector("h1")
 const letters = h1.innerText.split('')
 let html = ""
 
-console.log(title)
 letters.forEach(letter=> {
     let classes = ''
     if(letter !== ' ') {
         classes = 'letter js-letter'
     }
-
-    htnl = html + '<span class='${classes}'>${letter} js-letter'>
+ html = html + `<span class='${classes}'>${letter}</span>`
 })
 h1.innerHTML = html
-const jsLetters = document.querySelector(".js-letter")
-jsLetters.forEach(node =>) {
-    node.addEventlistener()
-}
+const jsLetters = document.querySelectorAll(".js-letter")
+jsLetters.forEach(node => {
+    node.addEventListener("mouseover", function(event) {
+        console.log(this.innerText)
+        this.classList.add("active")
+    })
+    node.addEventListener("mouseout", function(event) {
+        console.log("out")
+        this.classList.remove("active")
+    })
+})
     </script>
 </body>
 </html>
