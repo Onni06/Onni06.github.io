@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luksia laskin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="laskin3.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="header">Luksia laskin</h1>
+        <p>Laskin</p>
+        <div class="mb-3 row">
+
+            <div class="col-sm-10">
+                <input type="textarea" class="form-control" id="inputPassword">
+            </div>
+        </div>
+        <p>Laskutoimitus</p>
+        <div class="col-sm-10">
+            <div data-previousoperand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+            <select class="form-select data-operation" aria-label="Default select example">
+                <option value="1"></option>
+                <option value="2">+</option>
+                <option value="3">-</option>
+                <option value="4">*</option>
+                <option value="5">/</option>
+            </select>
+        </div>
+
+        <button type="button" class="btn btn-primary">7</button>
+        <button type="button" class="btn btn-primary">8</button>
+        <button type="button" class="btn btn-primary">9</button>
+        <br>
+        <button type="button" class="btn btn-primary">4</button>
+        <button type="button" class="btn btn-primary">5</button>
+        <button type="button" class="btn btn-primary">6</button>
+        <br>
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+        <button type="button" class="btn btn-primary">3</button>
+        <button type="button" class="btn btn-primary miinus">-</button>
+        <br>
+        <button type="button" class="btn btn-primary">0</button>
+        <button type="button" class="btn btn-primary">.</button>
+        <button type="button" class="btn btn-primary">C</button>
+    </div>
+
+    <script src="laskin2.js"></script>
+
+</body>
+
+</html>
