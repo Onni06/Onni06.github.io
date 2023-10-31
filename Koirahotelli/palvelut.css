@@ -1,0 +1,108 @@
+.body {
+    overflow-x: hidden;
+}
+.bg-img{
+    height: 60vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+ .kuva-container {
+   margin-top: 60px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.kuva-text-container {
+    text-align: center;
+    max-width: 350px;
+    margin: 10px auto;
+    font-family: cursive;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testi3{ 
+
+    color: green;
+    text-align: start;
+    margin-right: 20px;
+    background-color:transparent;
+    height: 40px;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    }
+    
+    .testi1, .testi2 {
+        margin-left: 250px;
+        margin-right: 350px;
+        font-family:cursive;
+    }
+    
+    .moi1 {
+        background-image: url("Img/koirahoitolakuva.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 500px;
+    
+        
+    }
+    
+    .header1 {
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+        color:white;
+        font-size:6vw;
+        padding-top: 40px;
+    
+    }
+    .header2 {
+        
+        font-size: 3vw;
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+        color: white
+        
+    }
+    .header3 {
+       margin-top: 400px;
+        font-size: 3vw;
+        margin-left: 12vw;
+            
+            font-family: 'Brush Script MT', cursive;
+            color:green;
+        
+    }
+
+   
+
+  
+        
+    
+    .teksti {
+        white-space: nowrap;
+        border: 1px solid green;
+    }
+   
+    .nav-link {
+        color:white;
+        font-size: 25px;
+        }
+
+       .img-fluid {
+       padding-bottom: 30px;
+    height: 12vw;
+}
+    
+.lista1, .lista2, .lista3 {
+    margin-top: 30px;
+}
+    

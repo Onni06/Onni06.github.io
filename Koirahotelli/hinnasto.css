@@ -1,0 +1,38 @@
+.body {
+    overflow-x: hidden;
+}
+.bg-img{
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.nav-link {
+    color:white;
+    font-size: 25px;
+    }
+    .otsikko {
+        text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color:white;
+    font-size:6vw;
+    padding-top: 20px;
+    }
+    .header3 {
+        margin-top: 350px;
+        font-size: 3vw;
+        font-family: 'Brush Script MT', cursive;
+    color:green;
+    }
+    .header2 {
+        
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Brush Script MT', cursive;
+        color: white
+        
+    }

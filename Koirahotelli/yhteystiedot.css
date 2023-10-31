@@ -1,0 +1,55 @@
+.body {
+    overflow-x: hidden;
+}
+.bg-img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+
+.header1 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color:white;
+    font-size:6vw;
+    padding-top: 20px;
+}
+
+.header2 {
+        
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: white
+    
+}
+.header3 {
+    
+     font-size: 50px;
+    
+         font-family: 'Brush Script MT', cursive;
+         color:green;
+     
+ }
+
+
+.nav-link {
+color:white;
+font-size: 25px;
+}
+.map-area {
+    margin-right: 10vw;
+    margin-top: 60px;
+    float: right;
+    margin-left: 700px;
+}
+
+.teksti {
+   margin-top: 170px;
+    margin-left: 9vw;
+}
