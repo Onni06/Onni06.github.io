@@ -1,5 +1,6 @@
 .body {
     overflow-x: hidden;
+    background-color:bisque;
 }
 .bg-img{
     height: 40vh;
@@ -16,40 +17,140 @@ z-index: -1;
     text-align: center;
     font-family: 'Brush Script MT', cursive;
     color:white;
-    font-size:6vw;
+    font-size:5vw;
     padding-top: 20px;
 }
 
 .header2 {
         
-    font-size: 50px;
+    font-size: 2vw;
     text-align: center;
     font-family: 'Brush Script MT', cursive;
     color: white
     
 }
 .header3 {
-    
-     font-size: 50px;
-    
+    margin-bottom: 6vh;
+     font-size: 2vw;
+    margin-top: 20vh;
          font-family: 'Brush Script MT', cursive;
          color:green;
      
  }
 
+ .header4 {
+    margin-bottom: 4vh;
+    font-size: 2vw;
+   margin-top: 8vh;
+        font-family: 'Brush Script MT', cursive;
+        color:green;
+    
+}
 
+p {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.1vw;
+}
 .nav-link {
 color:white;
 font-size: 25px;
 }
 .map-area {
     margin-right: 10vw;
-    margin-top: 60px;
+    
     float: right;
-    margin-left: 700px;
+   
+}
+.Englanti {
+    font-family: 'Brush Script MT', cursive;
+    color:green;
+    margin-top: 10vh;
+    margin-left: 9vw;
 }
 
+.p-3 {
+    background-color: gainsboro;
+}
+
+iframe{
+    height: 50vh;
+    width:30vw;
+    margin-top: 6vh;
+}
+@media only screen and (max-width: 900px) {
+    
+    iframe {
+        width:20vw ;
+        height: 25vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+    iframe {
+        width:35vw ;
+        height: 15vh;
+      
+    }
+
+    .map-area {
+        
+        margin-left: 10vw;
+        float: left;
+       
+    }
+
+}
+
+
+.paragraph1 {
+    margin-right: 8vw;
+}
+
+
 .teksti {
-   margin-top: 170px;
+   margin-right: 9vw;
     margin-left: 9vw;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 1.5s, visibility 1.5s;
+
+}
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: green;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite ;
+
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+.text-white {
+    margin-top: 20vh;
 }

@@ -27,34 +27,7 @@ z-index: -1;
     flex-direction: column;
     align-items: center;
 }
-.testi3{ 
 
-    color: green;
-    text-align: start;
-    margin-right: 20px;
-    background-color:transparent;
-    height: 40px;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-left: 20px;
-    }
-    
-    .testi1, .testi2 {
-        margin-left: 250px;
-        margin-right: 350px;
-        font-family:cursive;
-    }
-    
-    .moi1 {
-        background-image: url("Img/koirahoitolakuva.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        height: 500px;
-    
-        
-    }
     
     .header1 {
         text-align: center;
@@ -73,7 +46,7 @@ z-index: -1;
         
     }
     .header3 {
-       margin-top: 400px;
+       margin-top: 40vh;
         font-size: 3vw;
         margin-left: 12vw;
             
@@ -83,9 +56,6 @@ z-index: -1;
     }
 
    
-
-  
-        
     
     .teksti {
         white-space: nowrap;
@@ -99,10 +69,66 @@ z-index: -1;
 
        .img-fluid {
        padding-bottom: 30px;
-    height: 12vw;
+    height: 250px;
 }
     
-.lista1, .lista2, .lista3 {
-    margin-top: 30px;
-}
+  footer {
+    margin-top: 20vh;
+  }
+@media only screen and (max-width: 900px) {
     
+    .img-fluid {
+        height:  180px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .img-fluid {
+        height:  125px;
+    }
+
+}
+
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f9fb;
+    transition: opacity 1.5s, visibility 1.5s;
+
+}
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: green;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite ;
+
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}

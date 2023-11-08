@@ -12,38 +12,36 @@ left: 0;
 z-index: -1;
 }
 
-.testi1, .testi2 {
-    margin-left: 250px;
-    margin-right: 350px;
-    font-family:cursive;
-}
-
 
 
 .header1 {
     text-align: center;
     font-family: 'Brush Script MT', cursive;
     color:white;
-    font-size:6vw;
+    font-size:5vw;
     padding-top: 20px;
 }
 
 .head2, .head3, .head4 {
     margin-top: 20px;
-    font-size: 4vw;
+    font-size: 2.6vw;
     text-align: center;
     font-family: 'Brush Script MT', cursive;
     color:green;
     
 }
+.head4 {
+  margin-top: 7vh;
+}
+
 .footteri {
     font-family: 'Brush Script MT', cursive;
-    color: green;
-    font-size: 25px;
+    
+    font-size: 1vw;
 }
 .lead  {
     font-family: cursive;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     text-align: center;
     margin-left: 10vw ;
     margin-right: 7vw ;
@@ -52,7 +50,7 @@ z-index: -1;
 
 
 .head2 {
-    margin-top: 450px;
+    margin-top: 48vh;
 }
 .nav-link {
 color:white;
@@ -152,7 +150,7 @@ margin-top: 130px;
 
   .lista {
   float: right;
-  margin-top: 330px;
+  margin-top: 28vh;
 font-size: 1.3vw;
 margin-right: 18vw;
 font-family: cursive;
@@ -162,4 +160,43 @@ font-family: cursive;
   font-size: 2.5vw;
  font-family: 'Brush Script MT';
 color:green;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f9fb;
+  transition: opacity 1.5s, visibility 1.5s;
+
+}
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: green;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite ;
+
+}
+
+@keyframes loading {
+  from{
+      transform: rotate(0turn);
+  }
+  to{
+      transform: rotate(1turn);
+  }
 }
