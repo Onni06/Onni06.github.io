@@ -3,7 +3,7 @@
     overflow-x: hidden;
 }
 .bg-img{
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
     position: absolute;
@@ -12,7 +12,13 @@ left: 0;
 z-index: -1;
 }
 
+@media only screen and (max-width: 700px) {
+    
+  .bg-img {
+      height: 40vh
+  }
 
+}
 
 .header1 {
     text-align: center;
@@ -50,7 +56,7 @@ z-index: -1;
 
 
 .head2 {
-    margin-top: 48vh;
+    margin-top: 38vh;
 }
 .nav-link {
 color:white;
