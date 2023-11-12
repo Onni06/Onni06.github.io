@@ -11,6 +11,26 @@ left: 0;
 z-index: -1;
 }
 
+@media only screen and (max-width: 990px) {
+    
+    .bg-img {
+        height: 50vh
+    }
+  
+  }
+
+  @media only screen and (max-width: 740px) {
+    
+    .bg-img {
+        height: 40vh
+    }
+  
+  }
+
+
+
+
+
 .nav-link {
     color:white;
     font-size: 25px;
@@ -46,14 +66,35 @@ font-size: 1.1vw;
 .Englanti {
         font-family: 'Brush Script MT', cursive;
         color: green;
+        font-size: 1.5vw;
         margin-left: 16vw;
         margin-top: 8vh;
     }
 
 .text-white {
     margin-top: 20vh;
+    font-family: 'Brush Script MT', cursive;
+    
+    font-size: 1vw;
 }
+   .ehdot {
+    font-family: 'Brush Script MT', cursive;
+   padding-left: 16vw;
+   padding-top: 5vw;
+    font-size: 0.9vw;
+    margin-right: 15vw;
+}
+
+.ehdot1 {
+    font-family: 'Brush Script MT', cursive;
+   padding-left: 16vw;
    
+    font-size: 0.9vw;
+    margin-right: 15vw;
+}
+
+
+
     .loader {
         position: fixed;
         top: 0;

@@ -64,26 +64,27 @@ font-size: 25px;
 .Englanti {
     font-family: 'Brush Script MT', cursive;
     color:green;
-    margin-top: 10vh;
+    margin-top: 7vh;
     margin-left: 9vw;
+    font-size: 1.3vw;
 }
 
-.p-3 {
-    background-color: gainsboro;
-}
+
 
 iframe{
     height: 50vh;
     width:30vw;
     margin-top: 6vh;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
     
     iframe {
         width:20vw ;
         height: 25vh;
     }
-
+    .bg-img{
+        height: 30vh;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -100,7 +101,9 @@ iframe{
         float: left;
        
     }
-
+.teksti, .Englanti {
+    padding-left: 50%;
+}
 }
 
 
