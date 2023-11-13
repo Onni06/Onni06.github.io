@@ -60,7 +60,7 @@ z-index: -1;
     margin-top: 8vh;
   max-width: 70vw;
 margin-left: 15vw;
-  font-family:'Brush Script MT', cursive; ;
+  font-family:'Brush Script MT' ;
 font-size: 1.1vw;
 }
 .Englanti {
@@ -78,7 +78,7 @@ font-size: 1.1vw;
     font-size: 1vw;
 }
    .ehdot {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT';
    padding-left: 16vw;
    padding-top: 5vw;
     font-size: 0.9vw;
@@ -86,7 +86,7 @@ font-size: 1.1vw;
 }
 
 .ehdot1 {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT';
    padding-left: 16vw;
    
     font-size: 0.9vw;
