@@ -128,9 +128,9 @@ margin-top: 130px;
 @media only screen and (max-width: 650px) {
     
   .slide > img { 
-      height: 40%
+      height: 30%
   }
- 
+  
 
 }
   .slide[data-active] {
@@ -145,7 +145,7 @@ margin-top: 130px;
 	background: none;
 	border: none;
 	font-size: 2vw;
-	top: 45%;
+	top: 40%;
 	transform: translateY(-50%);
 	color: rgba(255, 255, 255, .5);
 	cursor: pointer;
