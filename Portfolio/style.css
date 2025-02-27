@@ -101,7 +101,7 @@ nav {
   margin-bottom: 20px;
 }
 .hero-text p {
-  font-size: 20px;
+  font-size: 20px; 
   line-height: 1.5;
 }
 
@@ -109,7 +109,6 @@ nav {
 .introduction, .portfolio, .about {
   padding: 60px 0;
   text-align: center;
-  margin-bottom: 100px;
 }
 .introduction h2,
 .portfolio h2,
@@ -288,17 +287,17 @@ footer .footer-container {
 }
 footer p {
   font-size: 16px;
-  color: #777;
+  color: #555; 
 }
 footer .social a {
   margin: 0 10px;
-  color: #007ACC;
+  color: #005A99; 
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 footer .social a:hover {
-  color: #005a99;
+  color: #004A8F; /* Muutettu hover-väri */
 }
 
 /* Responsiiviset tyylit */
@@ -338,7 +337,3 @@ footer .social a:hover {
     padding-left: 0;
   }
 }
-
-
-
-
