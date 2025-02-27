@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onni Suominen - Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Onni Suominen</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#top">Etusivu</a></li>
+          <li><a href="#projects">Projektit</a></li>
+          <li><a href="cv.html">Tietoa minusta</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero-osio -->
+    <section class="hero container">
+      <div class="hero-wrapper">
+        <div class="hero-image">
+          <img src="heroimage3.jpg" alt="Kuvaesitys">
+        </div>
+        <div class="hero-text">
+          <h2>Tervetuloa Onni Suomisen portfolion pariin!</h2>
+          <p>
+            Ohjelmistokehittäjänä yhdistän teknisen osaamisen ja luovan suunnittelun toteuttaakseni ratkaisuja, 
+            jotka tekevät vaikutuksen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Esittely / Minusta-osio -->
+    <section class="introduction container">
+      <h2>Minusta</h2>
+      <p>
+        Olen Onni Suominen, motivoitunut ja innokas tuleva ohjelmistokehittäjä, joka on perehtynyt sekä front-end- että back-end-teknologioihin. Verkkosivujen toteutuksessa hyödynnän mm. HTML:ää, CSS:ää, JavaScriptiä, Bootstrapia sekä PHP:tä, ja lisäksi hallitsen WordPressin käytön sivustojen ylläpitämisessä. Minulla on perustason taitoja C#-ohjelmoinnista sekä SQL-tietokannoista (MySQL). Olen työskennellyt monipuolisissa projektiympäristöissä. Uskon innovatiivisiin ratkaisuihin ja jatkuvaan kehittymiseen – tämä näkyy harjoitteluprojekteissani, joissa olen laajentanut osaamistani sekä tiimityöskentelyssä että itsenäisessä kehittämisessä. Olen aina valmis ottamaan vastaan uusia haasteita ja kasvamaan ammattilaisena IT-alalla.
+      </p>
+    </section>
+
+    <!-- Lisää tilaa Minusta- ja Projektit-osioiden väliin -->
+    <div class="section-gap"></div>
+
+    <!-- Projektit-osio -->
+    <section id="projects" class="portfolio container">
+      <h2>Projektit</h2>
+      <p>Tutustu projekteihini. Klikkaa projektia nähdäksesi tarkemmat tiedot kyseisestä projektista.</p>
+      <div class="project-grid">
+        <!-- Projektit 1-3 -->
+        <div class="project" data-title="Projektin nimi 1" data-description="Tämä projekti keskittyi modernin web-teknologian hyödyntämiseen ja interaktiivisten sovellusten kehittämiseen. Toteutimme responsiivisia käyttöliittymiä ja kehittyneitä API-integraatioita." data-image="projekti1.jpg">
+          <img src="hero-image.jpg" alt="Projekti 1">
+          <h3>Projekti 1</h3>
+          <p>Näyttävä web-sovellus</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 2" data-description="Tässä projektissa kehitettiin yrityksen sisäisiä työkaluja, jotka tehostivat liiketoimintaprosesseja ja automatisoivat monia manuaalisia tehtäviä. Ratkaisu oli käyttäjäystävällinen ja tehokas." data-image="projekti2.jpg">
+          <img src="hero-image.jpg" alt="Projekti 2">
+          <h3>Projekti 2</h3>
+          <p>Yrityssovellus</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 3" data-description="Projektissa keskityttiin mobiilisovelluksen kehittämiseen, joka yhdistää intuitiivisen käyttöliittymän ja kehittyneet paikannuspalvelut. Sovellus parantaa käyttäjien arkea merkittävästi." data-image="projekti3.jpg">
+          <img src="hero-image.jpg" alt="Projekti 3">
+          <h3>Projekti 3</h3>
+          <p>Mobiilisovellus</p>
+        </div>
+        <!-- Uudet projektit 4-6 -->
+        <div class="project" data-title="Projektin nimi 4" data-description="Tässä projektissa keskityttiin tekoälyratkaisuihin, joissa hyödynnettiin koneoppimista ja data-analytiikkaa parantamaan liiketoiminnan prosesseja." data-image="projekti4.jpg">
+          <img src="hero-image.jpg" alt="Projekti 4">
+          <h3>Projekti 4</h3>
+          <p>Tekoälyratkaisu</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 5" data-description="Projekti keskittyi responsiivisen suunnittelun ja modernin UX/UI-suunnittelun yhdistämiseen, tarjoten käyttäjille intuitiivisen ja miellyttävän käyttökokemuksen." data-image="projekti5.jpg">
+          <img src="hero-image.jpg" alt="Projekti 5">
+          <h3>Projekti 5</h3>
+          <p>UX/UI-suunnittelu</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 6" data-description="Tässä projektissa toteutettiin pilvipohjainen ratkaisu, joka skaalautuu helposti ja tarjoaa tehokkaan alustan yrityksen sovelluksille ja palveluille." data-image="projekti6.jpg">
+          <img src="hero-image.jpg" alt="Projekti 6">
+          <h3>Projekti 6</h3>
+          <p>Pilvipalvelu</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal-ikkuna projekteille -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="Projektikuva">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <footer class="sticky-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Onni Suominen. Kaikki oikeudet pidätetään.</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/onni-suominen/" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/Onni06" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
