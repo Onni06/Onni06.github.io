@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onni Suominen - Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Onni Suominen</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+           <li><a href="index.html">Etusivu</a></li>
+           <li><a href="cv.html">Tietoa minusta</a></li>
+        </ul>
+        <div class="hamburger">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      <p>Tutustu projekteihini alla. Klikkaa projektia nähdäksesi lisää tietoa kyseisestä projektista.</p>
+      <div class="project-grid">
+        <!-- Projektin esikatselukuvalla on data-attribuutit modalin tietoja varten -->
+        <div class="project" data-title="Projektin nimi 1" data-description="Tämä projekti keskittyi modernin web-teknologian hyödyntämiseen ja interaktiivisten sovellusten kehittämiseen. Projektin aikana toteutettiin responsiivisia käyttöliittymiä sekä kehittyneitä API-integraatioita." data-image="projekti1.jpg">
+          <img src="projekti1.jpg" alt="Projekti 1">
+          <h3>Projekti 1</h3>
+          <p>Näyttävä web-sovellus</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 2" data-description="Tässä projektissa kehitettiin yrityksen sisäisiä työkaluja, jotka tehostivat liiketoimintaprosesseja ja automatisoivat monia manuaalisia tehtäviä. Tulos oli käyttäjäystävällinen ja tehokas ratkaisu." data-image="projekti2.jpg">
+          <img src="projekti2.jpg" alt="Projekti 2">
+          <h3>Projekti 2</h3>
+          <p>Yrityssovellus</p>
+        </div>
+        <div class="project" data-title="Projektin nimi 3" data-description="Projektissa keskityttiin mobiilisovelluksen kehittämiseen, joka yhdistää intuitiivisen käyttöliittymän ja kehittyneet paikannuspalvelut. Sovellus parantaa käyttäjien arkea merkittävästi." data-image="projekti3.jpg">
+          <img src="projekti3.jpg" alt="Projekti 3">
+          <h3>Projekti 3</h3>
+          <p>Mobiilisovellus</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Modal-ikkuna -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="Projektikuva">
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+  
+  <footer class="sticky-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Onni Suominen. Kaikki oikeudet pidätetään.</p>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
